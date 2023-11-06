@@ -1,0 +1,213 @@
+/* Common styles for all screen sizes */
+
+/* Reset default margin, padding, and font for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto-Regular", Helvetica;
+}
+
+/* Container for content with 80% width and auto height */
+.container {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+/* Navbar styling with flex layout, space-between alignment, and top margin */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+}
+
+/* Main navigation container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+
+/* List items within the navigation with adjustments for smaller screens */
+nav > ul {
+  color: #767676;
+  text-decoration: none;
+  list-style: none;
+  display: inline-flex;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 0 20px; /* Adjust margin for smaller screens */
+}
+
+/* Style for list items within the navigation */
+nav > ul > li {
+  margin-left: 20px; /* Adjust margin for smaller screens */
+  margin-top: 10px;
+}
+
+/* Login button styling */
+nav > button {
+  border: 1px solid #f36b7f;
+  border-radius: 20px;
+  color: #f36b7f;
+  width: 140px;
+  height: 40px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* Login button hover effect */
+nav > button:hover {
+  color: #767676;
+  background-color: #f36b7f;
+}
+
+/* Hero section styling with flex layout and adjustments for smaller screens */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  align-items: center;
+}
+
+/* Text within the hero section */
+.hero-text {
+  width: 50%;
+}
+
+/* Image within the hero section */
+.hero-img {
+  width: 50%;
+}
+
+/* Heading in the hero section with color and size adjustments */
+.hero-text > h1 {
+  color: #2b3f60;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 5em;
+}
+
+/* Paragraph in the hero section with color and size adjustments */
+.hero-text p {
+  max-width: 80ch;
+  color: #767676;
+  font-size: 1.5em;
+  padding-bottom: 20px;
+}
+
+/* Buttons within the hero and customer sections with shared styles */
+.hero-text button,
+.customer-text button {
+  background-color: #f36b7f;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1em;
+  cursor: pointer;
+  width: auto;
+  min-width: 100px;
+  height: auto;
+}
+
+/* Button hover effect for buttons in hero and customer sections */
+.hero-text button:hover,
+.customer-text button:hover {
+  color: #f36b7f;
+  background-color: transparent;
+  border: #f36b7f 1px solid;
+}
+
+/* Partners section with flex layout and spacing */
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  justify-content: space-between;
+}
+
+/* Download section with background color and text styling */
+.download {
+  background-color: #f36b7f;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+  width: 100% !important;
+}
+
+/* Text within the download section */
+.download-text {
+  font-family: "Raleway-ExtraBold", Helvetica;
+  padding-top: 200px;
+  max-width: 30%;
+}
+
+/* Heading in the download section with font weight and size adjustments */
+.download-text h2 {
+  font-weight: 800;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+/* Paragraph in the download section with line height, letter spacing, and size adjustments */
+.download-text p {
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  font-size: 1.2em;
+}
+
+/* Google Play image styling */
+.googleplay {
+  margin-top: 10px;
+}
+
+/* Image within the download section */
+.download-img {
+  margin-top: 80px;
+}
+
+/* Customer section with flex layout */
+.customer {
+  display: flex;
+}
+
+/* Text within the customer section with margin and width adjustments */
+.customer-text {
+  margin-top: 270px;
+  width: 30%;
+  max-width: 50%;
+  margin-left: 300px;
+  font-family: "Raleway-Bold", Helvetica;
+}
+
+/* Heading in the customer section with font weight and size adjustments */
+.customer-text h3 {
+  font-weight: 700;
+  font-size: 2.2em;
+}
+
+/* Paragraph in the customer section with color and size adjustments */
+.customer-text p {
+  font-size: 1.2em;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  color: #79869a;
+}
+
+/* Footer section with flex layout, background color, and padding */
+.footer {
+  display: flex;
+  background-color: #82b5a5;
+  justify-content: space-around;
+  padding: 1.5em;
+  border-top-left-radius: 60px;
+  color: #ffffff;
+}
